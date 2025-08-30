@@ -74,6 +74,10 @@ def rectified_message(dev_msg, llm_msg, filename):
 # Load data
 df = pd.read_csv("diff_analysis.csv")
 
+# Drop the existing empty "Rectified Message" column if it exists
+if "Rectified_Message" in df.columns:
+    df = df.drop("Rectified Message", axis=1)
+
 # Apply rectifier
 results = df.apply(
     lambda row: rectified_message(
