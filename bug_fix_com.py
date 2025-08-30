@@ -2,7 +2,7 @@ from pydriller import Repository
 import pandas as pd
 
 keywords = [
-    "fixed", "bug", "fixes", "fix", "fix", "fixed", "fixes", "crash", 
+    "fixed", "bug", "fixes", "fix", "crash", 
     "solves", "resolves", "resolves", "issue", "regression", "fall back", 
     "assertion", "covertly", "reproducible", "stack-wanted", "steps-wanted", 
     "testcase", "failure", "fail", "npe", "npe", "except", "broken", 
